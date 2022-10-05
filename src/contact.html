@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Sales</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="main-content" class="container flex min-h-screen w-full">
+        <div class="bg-white p-8 mx-auto border border-black rounded-lg shadow max-w-lg self-center">
+            <h1 class="text-center font-latin text-2xl font-bold mb-4">Reservasi</h1>
+            <div class="form-group flex mb-2">
+                <label class="w-1/3 font-latin text-xl mr-4" for="nama">Nama</label>
+                <input class="w-2/3 p-1 border border-black rounded-md" type="text">
+            </div>
+            <div class="form-group flex mb-2">
+                <label class="w-1/3 font-latin text-xl mr-4" for="nama">Check In</label>
+                <input class="w-2/3 p-1 border border-black rounded-md" type="date">
+            </div>
+            <div class="form-group flex mb-2">
+                <label class="w-1/3 font-latin text-xl mr-4" for="nama">Check Out</label>
+                <input class="w-2/3 p-1 border border-black rounded-md" type="date">
+            </div>
+            <div class="form-group flex mb-2">
+                <label class="w-1/3 font-latin text-xl mr-4" for="nama">Room Type</label>
+                <select class="w-2/3 p-1 border border-black rounded-md">
+                    <option value="">Superior</option>
+                    <option value="">Deluxe Twin</option>
+                </select>
+            </div>
+            <div class="form-group flex mb-2">
+                <label class="w-1/3 font-latin text-xl mr-4" for="nama">Breakfast</label>
+                <div class="flex flex-wrap w-2/3">
+                    <div class="w-full">
+                        <input name="breakfast" class="mr-2 p-1 self-center border border-black rounded-md" type="radio"><span class="mr-2">Yes</span><span class="text-red-500 mr-2">)*</span>
+                        <input name="breakfast" class="mr-2 p-1 self-center border border-black rounded-md" type="radio"><span class="mr-2">No</span>
+                    </div>
+                    <div class="w-full">
+                        <small class="text-[11px] text-red-500">*Additional charge IDR 100.000 for 2 pax</small>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group flex mb-2">
+                <label class="w-1/3 font-latin text-xl mr-4" for="nama">Note</label>
+                <textarea class="w-2/3 p-1 border border-black rounded-md" type="text">
+                
+                </textarea>
+            </div>
+            <div class="form-group flex mt-4">
+                <button class="mx-auto py-1 px-8 bg-green-500 hover:bg-green-600 text-lg text-white font-latin font-bold rounded-lg">
+                    Send
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
