@@ -11,7 +11,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      'latin' : ['Dancing Script', 'sans-serif']
+      'latin' : ['Dancing Script', 'Inter'],
+      'inter' : ['Inter', 'sans-serif'],
     },
   },
   plugins: [
