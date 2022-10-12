@@ -12,7 +12,7 @@ module.exports = {
     },
     fontFamily: {
       'latin' : ['Dancing Script', 'Inter'],
-      'inter' : ['Inter', 'sans-serif'],
+      'inter' : ['Montserrat', 'sans-serif'],
     },
   },
   plugins: [

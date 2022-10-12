@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="default-carousel" class="relative" data-carousel="static">
@@ -19,15 +19,16 @@
             <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
                 <span class="absolute text-2xl font-semibold text-black -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
                 <img src="/dist/img/room/suite-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Suite Room LPP Convention Hotel">
+                <span class="absolute text-white font-latin text-2xl font-extrabold block w-36 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-30">Suite Room</span>
             </div>
             <!-- Item 2 -->
             <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
                 <img src="/dist/img/room/suite-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Suite Room LPP Convention Hotel">
             </div>
             <!-- Item 3 -->
-            <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+            <!-- <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                 <img src="/dist/img/room/suite-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Suite Room LPP Convention Hotel">
-            </div>
+            </div> -->
             <!-- Item 4 -->
             <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
                 <img src="/dist/img/room/suite-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Suite Room LPP Convention Hotel">
@@ -38,7 +39,7 @@
             <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
             <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
             <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-            <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <!-- <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button> -->
         </div>
         <!-- Slider controls -->
         <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
@@ -109,25 +110,52 @@
     <section id="description" class="max-w-lg m-auto">
         <div class="container mx-auto px-8 py-4">
             <h1 class="mb-4 text-center font-inter text-lg font-semibold">Description</h1>
-            <p class="text-sm tracking-tighter text-justify font-inter">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente 
-                expedita eius impedit, magni rerum, aliquam voluptatibus nulla itaque 
-                maiores eum suscipit unde eos. Eligendi dicta dolorum illo reiciendis 
-                labore?
+            <p class="tracking-tighter text-justify font-inter">
+                <ul class="text-sm">
+                    <h4>Deskripsi Kamar :</h4>
+                    <li>Luas kamar <span class="font-semibold">40 m<sup>2</sup></span></li>
+                    <li>Ukuran tempat tidur <span class="font-semibold">200 x 200 (king bed)</span></li>
+                    <li>Tersedia Living Room, 2 Toilet, Bathup, dan Sofa di Kamar</li>
+                </ul>
             </p>
         </div>
     </section>
     <section id="price" class="mb-24">
         <div class="container mx-auto px-8 py-4">
             <h1 class="mb-4 text-center font-inter text-lg font-semibold">Exclusive Price</h1>
-            <h3 class="text-md font-inter font-medium line-through text-center">IDR 800.000,-</h3>
-            <h3 class="text-lg font-inter font-semibold text-center text-red-500">IDR 800.000,-</h3>
+            <p>
+                <ul class="text-sm">
+                    <li>
+                        <h4 class="font-semibold">Weekday :</h4>
+                        <ul class="p-2">
+                            <li>Room Only : <span class="font-semibold">IDR 650.000,-</span></li>
+                            <li>Room + Breakfast : <span class="font-semibold">IDR 750.000,-</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4 class="font-semibold">Weekend :</h4>
+                        <ul class="p-2">
+                            <li>Room Only : <span class="font-semibold">IDR 750.000,-</span></li>
+                            <li>Room + Breakfast : <span class="font-semibold">IDR 850.000,-</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4 class="font-semibold">Peak Season :</h4>
+                        <ul class="p-2">
+                            <li>Room Only : <span class="font-semibold">IDR 900.000,-</span></li>
+                            <li>Room + Breakfast : <span class="font-semibold">IDR 1.000.000,-</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+            <!-- <h3 class="text-md font-inter font-medium line-through text-center">IDR 800.000,-</h3>
+            <h3 class="text-lg font-inter font-semibold text-center text-red-500">IDR 800.000,-</h3> -->
         </div>
     </section>
     <footer id="act-btn" class="fixed bottom-0 bg-white h-20 w-full flex">
         <div class="container m-auto flex justify-center self-center">
             <a href="contact.html" class="bg-green-500 hover:bg-green-600 rounded-md px-6 py-2 flex self-center">
-                <span class="text-white font-bold font-inter text-xl mr-4">Reservasi Sekarang</span>
+                <span class="text-white font-bold font-latin text-xl mr-4">Reservasi Sekarang</span>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_8_86)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
