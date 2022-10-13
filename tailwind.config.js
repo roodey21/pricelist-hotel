@@ -13,6 +13,7 @@ module.exports = {
     fontFamily: {
       'latin' : ['Dancing Script', 'Inter'],
       'inter' : ['Montserrat', 'sans-serif'],
+      'montaga' : ['Montaga', 'serif'],
     },
   },
   plugins: [
